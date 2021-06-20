@@ -6,13 +6,19 @@
   "directories": {
     "test": "test"
   },
+  "devDependencies": {
+    "ganache-cli": "^6.1.6",
+    "openzeppelin-solidity": "^1.10.0",
+    "truffle": "^5.3.11",
+    "truffle-hdwallet-provider": "^1.0.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@openzeppelin/contracts": "^2.1.0"
-  }
+  "license": "ISC"
 }
