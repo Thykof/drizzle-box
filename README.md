@@ -1,71 +1,50 @@
-# Drizzle Truffle Box
+# Introduction to decentralized application
 
-This box comes with everything you need to start using smart contracts from a react app with Drizzle. It includes `drizzle`, `drizzle-react` and `drizzle-react-components` to give you a complete overview of Drizzle's capabilities.
+*This is a fork of [drizzle-box](https://www.trufflesuite.com/boxes/drizzle)*
 
-## Installation
+This project showcases how to create a decentralized application on the Ethereum blockchain, with smart contracts in **Solidity** and a frontend with **React**, with the **Drizzle** library.
 
-First ensure you are in a new and empty directory.
+## Tools/tech
 
-1. Run the `unbox` command via `npx` and skip to step 3. This will install all necessary dependencies. A Create-React-App is generated in the `app` directory.
-   ```js
-   npx truffle unbox drizzle
-   ```
+ - [Ethereum](https://ethereum.org): blockchain
+ - [Truffle](https://www.trufflesuite.com): blockchain development framework
+ - [Solidity](https://docs.soliditylang.org): programming language for smart contract
+ - [Web3](https://web3js.readthedocs.io): JavaScript library for interaction with the blockchain
+ - [Ganache](https://www.trufflesuite.com/ganache): development blockchain
+ - [MetaMask](https://metamask.io): crypto wallet
+ - [React](https://reactjs.org): frontend framework
+ - [Drizzle](https://www.trufflesuite.com/drizzle): JavaScript library for store management in React
 
-2. Alternatively, you can install Truffle globally and run the `unbox` command.
-    ```javascript
+## Setup
+Install node modules requirements:
+
     npm install -g truffle
-    truffle unbox drizzle
-    ```
+    npm install -g ganache-cli
+    npm install -g create-react-app
 
-3. Run the development console.
-    ```javascript
-    truffle develop
-    ```
+Then install the dependencies:
 
-4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
-    ```javascript
-    compile
-    migrate
-    ```
+    npm install
 
-5. In the `app` directory, we run the React app. Smart contract changes must be manually recompiled and migrated.
-    ```javascript
-    // in another terminal (i.e. not in the truffle develop prompt)
     cd app
-    npm run start
-    ```
+    npm install
 
-6. Truffle can run tests written in Solidity or JavaScript against your smart contracts. Note the command varies slightly if you're in or outside of the development console.
-    ```javascript
-    // inside the development console
-    test
+## Smart contract
+Start the development blockchain on a separate terminal:
 
-    // outside the development console
-    truffle test
-    ```
+    ganache-cli
 
-7. Jest is included for testing React components. Compile your contracts before running Jest, or you may receive some file not found errors.
-    ```javascript
-    // ensure you are inside the app directory when running this
-    npm run test
-    ```
+Compile: `truffle compile`
 
-8. To build the application for production, use the build script. A production build will be in the `app/build` folder.
-    ```javascript
-    // ensure you are inside the app directory when running this
-    npm run build
-    ```
+Tests: `truffle test`
 
-## FAQ
+Deploy: `truffle migrate`
 
-* __Where do I find more information about Drizzle?__
+## Frontend application
+Open a terminal in the `app` folder.
 
-    Check out our [documentation](http://truffleframework.com/docs/drizzle/getting-started) or any of the three repositories ([`drizzle`](https://github.com/trufflesuite/drizzle), [`drizzle-react`](https://github.com/trufflesuite/drizzle-react), [`drizzle-react-components`](https://github.com/trufflesuite/drizzle-react-components)).
+Run the application: `npm run start`. It serves at <http://localhost:3000>.
 
-* __Where is my production build?__
+Tests: `npm run test`
 
-    The production build will be in the `app/build` folder after running `npm run build` in the `app` folder.
-
-* __Where can I find more documentation?__
-
-    This box is a marriage of [Truffle](http://truffleframework.com/) and a React setup created with [create-react-app](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md). Either one would be a great place to start!
+Build: `npm run build`
