@@ -6,7 +6,8 @@ import TutorialToken from "./contracts/TutorialToken.json";
 const options = {
   web3: {
     block: false,
-    customProvider: new Web3("ws://localhost:8545"),
+    customProvider: new Web3(Web3.givenProvider), // connect with MetaMask
+    // customProvider: new Web3("ws://localhost:8545"), // connect directly to ganache
   },
   contracts: [SimpleStorage, ComplexStorage, TutorialToken],
   events: {
