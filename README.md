@@ -48,3 +48,34 @@ Run the application: `npm run start`. It serves at <http://localhost:3000>.
 Tests: `npm run test`
 
 Build: `npm run build`
+
+## Workshop
+1. blockchain introduction
+2. solidity code, SimpleStorage
+3. compile
+4. tests (sol, js, run)
+5. frontend: introduction to web3 (TODO: write a simple script)
+6. frontend: react and drizzle (TODO: custom form)
+7. generate a wallet, put the seed in ganache-cli and metamask
+8. local test blockchain (ganache)
+9. local deploiement, migration
+10. frontend: metamask
+11. frontend: run, connect, demo
+
+### Bonus
+ - code coverage
+ - eth gas reporter
+ - etherscan
+ - infura
+ - solidity-docgen
+ - ComplexStorage
+ - Event
+ - ERC20 Token
+ - ropsten: faucet
+ - ropsten: deploiement
+ - ropsten: e2e demo
+ - ropsten: destroy contract (TODO: write web3 script)
+
+### Links
+ - <https://iancoleman.io/bip39>
+ - <https://addons.mozilla.org/en-US/firefox/addon/ether-metamask>
