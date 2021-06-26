@@ -5,7 +5,7 @@ import drizzleOptions from "./drizzleOptions";
 import MyComponent from "./MyComponent";
 import "./App.css";
 
-const drizzle = new Drizzle(drizzleOptions);
+const drizzle = new Drizzle(drizzleOptions());
 
 const App = () => {
   return (
