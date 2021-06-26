@@ -10,9 +10,6 @@ const options = {
     // customProvider: new Web3("ws://localhost:8545"), // connect directly to ganache
   },
   contracts: [SimpleStorage, ComplexStorage, TutorialToken],
-  events: {
-    SimpleStorage: ["StorageSet"],
-  },
 };
 
 export default options;
