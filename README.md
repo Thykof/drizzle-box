@@ -52,25 +52,26 @@ Build: `npm run build`
 ## Workshop
 1. blockchain introduction
 2. solidity code, SimpleStorage
+ - ERC20 Token
 3. compile
+ - eth gas reporter
+ - solidity-docgen
 4. tests (sol, js, run)
-5. frontend: introduction to web3 (TODO: write a simple script)
-6. frontend: react and drizzle (TODO: custom form)
-7. generate a wallet, put the seed in ganache-cli and metamask
+ - code coverage
+5. frontend: introduction to web3 (js test)
+6. frontend: react and drizzle
+7. generate a wallet, put the seed in ganache-cli and truffle-config
 8. local test blockchain (ganache)
 9. local deploiement, migration
-10. frontend: metamask
+10. frontend: metamask (seed)
 11. frontend: run, connect, demo
 
 ### Bonus
- - code coverage
- - eth gas reporter
+
  - etherscan
  - infura
- - solidity-docgen
  - ComplexStorage
  - Event
- - ERC20 Token
  - ropsten: faucet
  - ropsten: deploiement
  - ropsten: e2e demo
@@ -79,3 +80,4 @@ Build: `npm run build`
 ### Links
  - <https://iancoleman.io/bip39>
  - <https://addons.mozilla.org/en-US/firefox/addon/ether-metamask>
+ - <https://serene-perlman-d26d57.netlify.app>
