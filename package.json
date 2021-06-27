@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "node": "ganache-cli -m \"spoil shiver salon alert paper robust budget recall stick possible jaguar liar\""
   },
   "keywords": [],
   "author": "",
