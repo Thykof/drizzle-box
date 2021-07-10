@@ -50,6 +50,14 @@ Tests: `npm run test`
 Build: `npm run build`
 
 ## Workshop
+
+**Preparation:**
+- start ganache
+- deploy LogisticM
+- copy json contracts
+- start both app
+- logout MetaMask
+
 1. blockchain introduction
 2. solidity code, SimpleStorage
  - ERC20 Token
@@ -68,10 +76,10 @@ Build: `npm run build`
 
 ### Bonus
 
- - etherscan
- - infura
  - ComplexStorage
  - Event
+ - etherscan
+ - infura
  - ropsten: faucet
  - ropsten: deploiement
  - ropsten: e2e demo
@@ -81,3 +89,4 @@ Build: `npm run build`
  - <https://iancoleman.io/bip39>
  - <https://addons.mozilla.org/en-US/firefox/addon/ether-metamask>
  - <https://serene-perlman-d26d57.netlify.app>
+ - <https://etherscan.io/gastracker>
